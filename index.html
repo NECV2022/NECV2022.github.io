@@ -32,6 +32,14 @@
   		-webkit-border-radius: 10px ;
   		padding: 20px;
   	}
+    
+    .author_list {
+      font-size: 11pt;
+      color: #555;
+    }
+    .talk_title {
+      font-size: 12pt;
+    }
 
   	video.header-vid {
   		height: 140px;
@@ -65,11 +73,25 @@
   		color: #208799;
   	}
   	
+    table { 
+        border-collapse: collapse; 
+    }
   	td.dl-link {
   		height: 160px;
   		text-align: center;
   		font-size: 22px;
   	}
+    tr {
+      border-top: 1pt solid black;
+      border-bottom: 1pt solid black;
+    }
+    
+    img.logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 256px;
+    }
   	
   	.vert-cent {
   		position: relative;
@@ -85,7 +107,7 @@
   	}
   </style>
 
-    <title>NECV 2019</title>
+    <title>NECV 2022</title>
   </head>
   <body>
     
@@ -157,16 +179,13 @@
         <hr>
         <h3>Logistics</h3>
         
-        <h4>Schedule</h4>
-        Coming soon!
-        <br><br>
-        <!--<h4>Tentative Schedule</h4>
+        <h4>Tentative Schedule</h4>
         <p>
-        </p><table class="w-100 table table-bordered table-responsive-sm table-sm">
+        </p><table>
             <tbody>
             <tr>
-                <td>09:00-10:00</td>
-                <td>Breakfast, sign-in, poster setup</td>
+                <td width=150px>9:30-10:00</td>
+                <td width=200px>Coffee, poster setup</td>
                 <td></td>
             </tr>
             <tr>
@@ -175,22 +194,51 @@
                 <td></td>
             </tr>
             <tr>
-                <td>10:15-11:45</td>
+                <td>10:15-11:30</td>
                 <td>Oral presentations 1</td>
                 <td>
-                    <ul>
-                        <li>Jahanian et al., On the “Steerability" of Generative Adversarial Networks (MIT)</li>
-                        <li>Usman et al., PuppetGAN: Cross-Domain Image Manipulation by Demonstration (BostonU)</li>
-                        <li>Gadelha et al., Deep Manifold Prior (UMass Amherst)</li>
-                        <li>Lin et al., Learning to See before Learning to Act: Visual Pre-training for Manipulation (MIT)</li>
-                        <li>Sharma et al., Third-Person Visual Imitation Learning via Decoupled Hierarchical Controller (MIT)</li>
-                        <li>Dyballa and Zucker, Deep Artificial Neural Networks: Little Brains or Big Retinas or Both? (Yale)</li>
-                    </ul>
+                    <ol>
+                      <li>
+<span class="talk_title">Semantic Attention Flow Fields for Dynamic Scene Decomposition</span>
+<br>
+<span class="author_list">Yiqing Liang et al.
+ (Brown)</span>
+</li>
+<li>
+<span class="talk_title">Towards using Adversarially Robust Features as alternative features for rendering of Full-Field Foveated Metamers</span>
+<br>
+<span class="author_list">Raphaela Kang, Arturo Deza
+ (MIT)</span>
+</li>
+<li>
+<span class="talk_title">Image as Set of Points</span>
+<br>
+<span class="author_list">Xu Ma, Yuqian Zhou, Huan Wang, Can Qin, Bin Sun, Chang Liu, Yun Fu
+ (Northeastern)</span>
+</li>
+<li>
+<span class="talk_title">Designing Perceptual Puzzles by Differentiating Probabilistic Programs</span>
+<br>
+<span class="author_list">Kartik Chandra, Tzu-Mao Li, Josh Tenenbaum, Jonathan Ragan-Kelley
+ (MIT)</span>
+</li>
+<li>
+<span class="talk_title">StegaPos: Preventing Unwanted Crops and Replacements with Imperceptible Positional Embeddings</span>
+<br>
+<span class="author_list">Gokhan Egri, Todd Zickler
+ (Harvard)</span>
+</li>
+</ol>
                 </td>
             </tr>
             <tr>
+              <td>11:30-11:45</td>
+              <td>Sponsor talks</td>
+              <td></td>
+            </tr>
+            <tr>
                 <td>11:45-13:00</td>
-                <td>Lunch</td>
+                <td>Lunch (on your own)</td>
                 <td></td>
             </tr>
             <tr>
@@ -198,39 +246,178 @@
                 <td>Poster presentations</td>
                 <td>
                     <ul>
-                        <li>Khan et al., View-consistent 4D Light Field Superpixel Segmentation (Brown)</li>
-                        <li>Jalal et al., Kenyan Food Type Recognition in Instagram Photos (BostonU)</li>
-                        <li>Yang et al., AG-NMS: Improving Object Detection in Crowd Scenes (BostonU)</li>
-                        <li>Fabbri et al., Trifocal Relative Pose from Lines at Points and its Efficient Solution (Brown)</li>
-                        <li>Zou et al., Automated Assessment of Human Embryo Development for In-Vitro Fertilization Treatment (Brown)</li>
-                        <li>Stone and Tompkin, Interpreting DeepVoxel Representations in Neural Networks (Brown)</li>
-                        <li>Tang et al., Qualitative Camera Relative Pose Estimation (Brown)</li>
-                        <li>Correa et al., GridMapper: Mapping Electricity Grid Infrastructure in Developing Countries (UMass Amherst)</li>
-                        <li>Pérez et al., Star Cluster Classification from LEGUS Photometric Catalogs (UMass Amherst)</li>
-                        <li>Ammar and Taubin, Real-time Computer Assisted Carving (Brown)</li>
-                        <li>Cohen et al., Shape From Tracing (Brown)</li>
-                        <li>Zhang et al., Practical Physically-based Lighting and Skin Reflectance Reconstructor for Face Images (Brown)</li>
-                        <li>Kotani et al., Reinvention of Printing and Handwriting (Brown)</li>
-                        <li>Tursman et al., Social Verification of Geometric Consistency to Combat Deepfakes (Brown)</li>
-                        <li>Jiang et al., SENSE: a Shared Encoder Network for Scene-flow Estimation (UMass Amherst)</li>
-                        <li>Bashkirova et al., Adversarial Self-Defense for Cycle-Consistent GANs (BostonU)</li>
-                        <li>Feng et al., Robust Visual Object Tracking with Natural Language Region Proposal Network (BostonU)</li>
-                        <li>Hsieh et al., Image-based Virtual Pathology based on Intra-procedure High Resolution CT for Microwave Ablation of Lung Tumors (Rhode Island Hospital)</li>
-                        <li>Teterwak et al., Boundless: Generative Adversarial Networks for Image Extension</li>
-                    </ul>
+                      <li>
+<span class="talk_title">Persistent Nature: A Generative Model of Unbounded 3D Worlds</span>
+<br>
+<span class="author_list">Lucy Chai, Richard Tucker, Zhengqi Li, Phillip Isola, Noah Snavely
+(MIT)</span>
+</li>
+<li>
+<span class="talk_title">GPU-HC: GPU-Based Homotopy Continuation Solver for Minimal Problems in Computer Vision</span>
+<br>
+<span class="author_list">Chiang-Heng Chien, Hongyi Fan, Ahmad Abdelfattah, Elias Tsigaridas, Stanimire Tomov, Benjamin Kimia
+(Brown)</span>
+</li>
+<li>
+<span class="talk_title">PARTICLE: Part Discovery and Contrastive Learning for Fine-grained Recognition</span>
+<br>
+<span class="author_list">Oindrila Saha, Subhransu Maji
+(Umass Amherst)</span>
+</li>
+<li>
+<span class="talk_title">ConDor: Self-Supervised Canonicalization of 3D Pose for Partial Shapes</span>
+<br>
+<span class="author_list">Rahul Sajnani, Adrien Poulenard, Jivitesh Jain, Radhika Dua, Leonidas J. Guibas, Srinath Sridhar
+(Brown)</span>
+</li>
+<li>
+<span class="talk_title">Multiview Curve Correspondence for Curve Grouping and Reconstruction</span>
+<br>
+<span class="author_list">Yilin Zheng, Chiang-Heng Chien, Benjamin Kimia
+(Brown)</span>
+</li>
+<li>
+<span class="talk_title">Spatio-Visual Fusion-Based Person Re-Identification for Overhead Fisheye Images</span>
+<br>
+<span class="author_list">Mertcan Cokbas, Prakash Ishwar, Janusz Konrad
+(BU)</span>
+</li>
+<li>
+<span class="talk_title">Medical Image Representation Learning via Mutual Information Maximization</span>
+<br>
+<span class="author_list">Sidong Zhang, Madalina Fiterau
+(Umass Amherst)</span>
+</li>
+<li>
+<span class="talk_title">Comparing Correspondences: Video Prediction with Correspondence-wise Losses</span>
+<br>
+<span class="author_list">Daniel Geng, Max Hamilton, Andrew Owens
+(Umass Amherst)</span>
+</li>
+<li>
+<span class="talk_title">UniverSeg: Universal Medical Image Segmentation</span>
+<br>
+<span class="author_list">Victor Ion Butoi, Jose J. Ortiz, Tianyu Ma, John Guttag, Mert R. Sabuncu, Adrian V. Dalca
+(MIT)</span>
+</li>
+<li>
+<span class="talk_title">Learning Object-Centric Dynamic Modes from Video and Emerging Properties</span>
+<br>
+<span class="author_list">Armand Comas, Christian Fernandez, Sandesh Ghimire, Haolin Li, Mario Sznaier, Octavia Camps
+(Northeastern)</span>
+</li>
+<li>
+<span class="talk_title">Generalized Relative Neighborhood Graph (GRNG) for Similarity Search</span>
+<br>
+<span class="author_list">Cole Foster, Berk Sevilmis, Benjamin Kimia
+(Brown)</span>
+</li>
+<li>
+<span class="talk_title">Joint rotational invariance and adversarial training of a dual-stream Transformer yields state of the art Brain-Score for Area V4</span>
+<br>
+<span class="author_list">William Berrios, Arturo Deza
+(MIT)</span>
+</li>
+<li>
+<span class="talk_title">ToRF++: 3D reconstruction and novel view synthesis for fast motion using Time-of-Flight cameras</span>
+<br>
+<span class="author_list">Mikhail Okunev, Benjamin Attal, Marc Mapeke, Christian Richardt, Matthew O’Toole, James Tompkin
+(Brown)</span>
+</li>
+<li>
+<span class="talk_title">SEARCH-REWRITE-TRAIN: Intermittent Code Rewriting for Unsupervised Visual Program Inference</span>
+<br>
+<span class="author_list">Aditya Ganeshan, R. Kenny Jones, Daniel Ritchie
+(Brown)</span>
+</li>
+<li>
+<span class="talk_title">Is that Pruning Experiment Really Fair? – On the Role of Trainability in Network Pruning</span>
+<br>
+<span class="author_list">Huan Wang, Can Qin, Yue Bai, and Yun Fu
+(Northeastern)</span>
+</li>
+<li>
+<span class="talk_title">Mitral Regurgitation Detection Using Cardiac Imaging Data</span>
+<br>
+<span class="author_list">Ke Xiao, James Priest, Erik Learned-Miller, Madalina Fiterau
+(Umass Amherst)</span>
+</li>
+<li>
+<span class="talk_title">Exploring visual prompts for adapting large-scale models</span>
+<br>
+<span class="author_list">Hyojin Bahng, Ali Jahanian, Swami Sankaranarayanan, Phillip Isola​
+(MIT)</span>
+</li>
+<li>
+<span class="talk_title">Using spatio-temporal information in weather radar data to detect and track communal bird roosts</span>
+<br>
+<span class="author_list">Gustavo Perez, Wenlong Zhao, Zezhou Cheng, Maria Carolina T. D. Belotti, Yuting Deng, Victoria F. Simons, Elske Tielens, Jeffrey F. Kelly, Kyle G. Horton, Subhransu Maji, Daniel Sheldon
+(Umass Amherst)</span>
+</li>
+<li>
+<span class="talk_title">Cross-view Action Recognition via Contrastive View-invariant Representations</span>
+<br>
+<span class="author_list">Yuexi Zhang, Dan Luo, Balaji Sundareshan, Octavia Camps, Mario Sznaier
+(Northeastern)</span>
+</li>
+<li>
+<span class="talk_title">Using 3D Models in Virtual Reality to Address Small Data Challenges in Human/Animal Pose Estimation</span>
+<br>
+<span class="author_list">Max Leblang, Le Jiang, Xiaofei Huang, Sarah Ostadabbas
+(Northeastern)</span>
+</li>
+<li>
+<span class="talk_title">Divide and Compose with Score Based Generative Models</span>
+<br>
+<span class="author_list">Sandesh Ghimire, Armand Comas, Davin Hill, Aria Masoomi, Octavia Camps*, Jennifer Dy*
+(Northeastern)</span>
+</li>
+<li>
+<span class="talk_title">Adaptive Trajectory Prediction via Transferable GNN</span>
+<br>
+<span class="author_list">Yi Xu, Lichen Wang, Yizhou Wang, Yun Fu
+(Northeastern)</span>
+</li>
+<li>... more coming ...</li>
+</ul>
                 </td>
             </tr>
             <tr>
                 <td>14:30-15:45</td>
                 <td>Oral presentations 2</td>
                 <td>
-                    <ul>
-                        <li>Huh et al., Projecting Images to Class-Conditional Generative Networks (MIT)</li>
-                        <li>Guo et al., Compact single-shot metalens depth sensors inspired by eyes of jumping spiders (Harvard)</li>
-                        <li>Li et al., KW-DYAN: A Recurrent Network for Adaptive Sequence Prediction (Northeastern)</li>
-                        <li>Robinson et al., Laplace Landmark Localization (Northeastern)</li>
-                        <li>Ruiz et al., Leveraging Affect Transfer Learning for Behavior Prediction in an Intelligent Tutoring System (BostonU/Clark/WPI)</li>
-                    </ul>
+                    <ol start="6">
+                      <li>
+                      <span class="talk_title">ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model</span>
+                      <br>
+                      <span class="author_list">Rao Fu, Xiao Zhan, Yiwen Chen, Daniel Ritchie, Srinath Sridhar
+                       (Brown)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Exploring Consistency in Cross-Domain Transformer for Domain Adaptive Semantic Segmentation</span>
+                      <br>
+                      <span class="author_list">Kaihong Wang, Donghyun Kim, Rogerio Feris, Kate Saenko, Margrit Betke
+                       (BU)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Learning Regular Rearrangements of Objects in Rooms</span>
+                      <br>
+                      <span class="author_list">Qiuhong Wei, Srinath Sridhar
+                       (Brown)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Analysis of Explainability Frameworks on Fine Grained Image Classification</span>
+                      <br>
+                      <span class="author_list">Rangel Daroya, Aaron Sun, Subhransu Maji
+                       (UMass Amherst)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Momentum is All You Need for Adaptive Optimization</span>
+                      <br>
+                      <span class="author_list">Yizhou Wang, Yue Kang, Can Qin, Huan Wang, Yi Xu, Yulun Zhang, Yun Fu
+                       (Northeastern)</span>
+                      </li>
+                    </ol>
                 </td>
             </tr>
             <tr>
@@ -242,18 +429,43 @@
                 <td>16:00-17:15</td>
                 <td>Oral presentations 3</td>
                 <td>
-                    <ul>
-                        <li>Su et al., When Does Self-supervision Improve Few-shot Learning? (UMass Amherst)</li>
-                        <li>Li et al., Weakly Supervised Learning of Human-Object Interactions from Captioned Videos (MIT)</li>
-                        <li>Cheng et al., A Bayesian Perspective on the Deep Image Prior (UMass Amherst)</li>
-                        <li>Walecki and Taubin, Super-Resolution 3D Laser Scanning based on Interval Arithmetic (Brown)</li>
-                        <li>Wu et al., PhraseCut: Instance-Aware Segmentation from Natural Language Phrases (UMass Amherst)</li>
-                    </ul>
+                    <ol start="11">
+                      <li>
+                      <span class="talk_title">Robust Frame-to-Frame Camera Rotation Estimation in Crowded Scenes</span>
+                      <br>
+                      <span class="author_list">Fabien Delattre, David Dirnfeld, Phat Nguyen, Stephen Scarano, Pedro Miraldo, Michael J. Jones, Erik Learned-Miller
+                       (UMass Amherst)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Mod-Squad: Designing Mixture of Experts As Modular Multi-Task Learners</span>
+                      <br>
+                      <span class="author_list">Zitian Chen, Yikang Shen, Mingyu Ding, Zhenfang Chen, Hengshuang Zhao, Erik Learned-Miller, Chuang Gan
+                       (UMass Amherst)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Compound Tokens: Channel Fusion for Vision-Language Representation Learning</span>
+                      <br>
+                      <span class="author_list">Maxwell Aladago, AJ Piergiovanni
+                       (Dartmouth)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Diagnosing Error in Human-object Interaction Detectors</span>
+                      <br>
+                      <span class="author_list">Fangrui Zhu, Weidi Xie, Yiming Xie, Huaizu Jiang
+                       (Northeastern)</span>
+                      </li>
+                      <li>
+                      <span class="talk_title">Discretization Invariant Learning on Neural Fields</span>
+                      <br>
+                      <span class="author_list">Clinton Wang et al. 
+                       (MIT)</span>
+                      </li>
+                    </ol>
                 </td>
             </tr> 
             </tbody>
         </table>
-        <p></p>-->
+        <p></p>
 
         <!--<h4>WiFi</h4>
         <p>
@@ -262,7 +474,7 @@
 
         <h4>Getting here</h4>
         <p>
-            The workshop will be held at the MIT-IBM Watson AI Lab (314 Main Street, Cambridge, MA, 0214).
+            The workshop will be held at the MIT-IBM Watson AI Lab (314 Main Street, Cambridge, MA, 02142).
         </p>
         <!--<iframe src="./NECV 2019_files/embed.html" width="75%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         
@@ -288,14 +500,18 @@
     <div class="container w-75">
         <hr>
         <h3>Sponsorship</h3>
-        <p>We are grateful to the MIT-IBM Watson AI Lab for providing the venue and for their support.</p>
+        <p>We are grateful to the MIT-IBM Watson AI Lab for providing the venue and logistical support. We thank Boston Dynamics, Shipin.ai, Google for providing funding.</p>
+        
+        <img class="logo" src="./files/bd_logo.png"/><br>
+        <img class="logo" src="./files/shipin_logo.jpg"/><br>
+        <img class="logo" src="./files/google_logo.png"/><br>
     </div>
 
     <div class="container w-75">
         <hr>
         <h3>Acknowledgements</h3>
         <p>
-            Thank you to Samson Timoner for helping us arrange NECV 2022. Thank you also to the steering committee: James Tompkin, Benjamin Kimia, Todd Zickler, Yun Raymond Fu, Octavia Camps, Kate Saenko, Erik Learned-Miller, and Subhransu Maji.
+            Thank you to Samson Timoner and Luke Inglis for helping us arrange NECV 2022. Thank you also to the steering committee: James Tompkin, Benjamin Kimia, Todd Zickler, Yun Raymond Fu, Octavia Camps, Kate Saenko, Erik Learned-Miller, and Subhransu Maji.
         </p>
         <h4>Past Years</h4>
         <ul>
